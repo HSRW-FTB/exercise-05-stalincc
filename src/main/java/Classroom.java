@@ -33,6 +33,8 @@ public class Classroom{
     this.course = coursearg;
     this.room = roomarg;
     
+    datearg = new Date();
+    
   }
   
   public Course getCourse(){
