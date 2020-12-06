@@ -11,7 +11,7 @@ public class Classroom{
 
   private String id;
   private Course course;
-  private Student [] participants;
+  private ArrayList<Student> participants = new ArrayList<Student>();
   private String room;
   private String term;
   
@@ -83,52 +83,26 @@ public class Classroom{
   
   public void addStudent(Student studentarg){
     
-    if (this.participants.length == 0){
-    
-      List<Student> tempList = new ArrayList<Student>(Arrays.asList(this.participants)); 
-     
-    }
-  
-    tempList.add(studentarg); 
-  
-    this.participants = tempList.toArray(this.participants); 
-  
+    participants.add(newStudent); 
     
     
   }
   
   public String getParticipantsEmail(){
   
-    String str = "";
-           
-        
-        for(int i=0; i<participants.length; i++){
-            if(i == (participants.length-1)){
-                str += (participants[i].getID() + "@student.hsrw");
-            }
-
-            else if (i == (participants.length)){
-
-              str += "";
-
+    String str = ""; 
+        for(Student p: participants){
+            str = str + (p.getFQUN() + ", ");
         }
-                                         
-          else{
-
-          str +=( participants[i].getID() + "@student.hsrw, ");
-
-          }
-               
-        }
-    
-        return str;
+        return newstr.substring(0,newstr.length()-2);
+    }
         
     
   }
   
   public int getTotalParticipants(){
   
-    return this.participants.length;
+    return participants.size(); 
 
     
   }
