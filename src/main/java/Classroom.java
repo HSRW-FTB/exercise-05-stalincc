@@ -20,14 +20,7 @@ public class Classroom{
     
     
   }
-  
-  public Classroom(Course coursearg, String roomarg){
-  
-    this.course = coursearg;
-    this.room = roomarg;
     
-  }
-  
   public Classroom(Course coursearg, String roomarg){
   
     this.course = coursearg;
@@ -110,7 +103,7 @@ public class Classroom{
                 str += (participants[i].getID() + "@student.hsrw");
             }
 
-            else if (i == (participants.length-1)){
+            else if (i == (participants.length)){
 
             str += "";
 
@@ -127,7 +120,7 @@ public class Classroom{
     
   }
   
-  public String getTotalParticipants(){
+  public int getTotalParticipants(){
   
     return this.participants.length;
 
