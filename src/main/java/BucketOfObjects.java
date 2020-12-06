@@ -1,21 +1,50 @@
 public class BucketOfObjects{
 
-  private GeometricObject [] items = new GeometricObject();
+  private GeometricObject [] items ;
   
   public BucketOfObjects(){
   
   
   }
   
-  public addObject(GeometricObject obj){
+  public void addObject(GeometricObject obj){
   
-    this.items += obj;
+    for(int i=0; i< this.items.length; i++){
+      this.items[i]= obj;
+    }    
+    
+  }
+  public double getTotalArea(){
+    double ar=0;
+    
+    for(int i=0; i< this.items.length; i++){
+      ar += items[i].getArea();
+ 
+    
+    
+    }
+    return ar;
   
   }
+  public double getTotalPerimeter(){
   
-  public toString(){
+      double p=0;
+    
+    for(int i=0; i< this.items.length; i++){
+      p+= items[i].getPerimeter();
+ 
+    
+    
+    }
+    return p;
+  }
   
-    String str = ""
+  
+  
+  
+  public String toString(){
+  
+    String str = "";
   
     for(int i = 0; i<this.items.length; i++){
   
@@ -23,17 +52,17 @@ public class BucketOfObjects{
       
         str += String.valueOf(this.items[i]);
       
-      }
+                                     }
       
       else{
       
         str += (String.valueOf(this.items[i]) + ", ");
       
-      }
-    
+           }
+    }
     return str;   
   
-    }
+           }
   
   
 
