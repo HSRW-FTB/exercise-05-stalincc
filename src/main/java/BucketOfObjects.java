@@ -13,9 +13,9 @@ public class BucketOfObjects{
   
     items.add(obj);
     
-    }    
+  }    
     
-  }
+  
   public double getTotalArea(){
     
     double ar = 0;
@@ -28,7 +28,7 @@ public class BucketOfObjects{
         return ar;
     
   
-  }
+    }
 
 
   public double getTotalPerimeter(){
@@ -40,7 +40,7 @@ public class BucketOfObjects{
     
         return p;
     
-  }
+    }
   
   
   
