@@ -52,11 +52,11 @@ public class Professor extends User{
     public String getPhone(){
 
         if (this.campus == Campus.KLE){
-            return "+49 2821 806 73 " + String.valueOf(this.phone);
+            return ("+49 2821 806 73 " + String.valueOf(this.phone));
             }
             
          else{
-            return "+49 2842 908 " + String.valueOf(this.phone);
+            return ("+49 2842 908 " + String.valueOf(this.phone));
     
     }
 }
