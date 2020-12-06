@@ -50,7 +50,7 @@ public class Student extends User {
        return arr2[num];
     }
     
-    public void setStudyCourse(Course kurs){
+    public void setStudyCourse(StudyCourse kurs){
     
         this.studycourse=kurs;
     
@@ -58,7 +58,7 @@ public class Student extends User {
     
     public void setStudyCourse(String abbr){
     
-      this.studycourse = Course.valueOf(abbr);
+      this.studycourse = StudyCourse.valueOf(abbr);
         
     }
     
