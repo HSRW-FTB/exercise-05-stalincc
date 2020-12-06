@@ -83,7 +83,11 @@ public class Classroom{
   
   public void addStudent(Student studentarg){
     
-    List<Student> tempList = new ArrayList<Student>(Arrays.asList(this.participants)); 
+    if (this.participants.length == 0){
+    
+      List<Student> tempList = new ArrayList<Student>(Arrays.asList(this.participants)); 
+     
+    }
   
     tempList.add(studentarg); 
   
