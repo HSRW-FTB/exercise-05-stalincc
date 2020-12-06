@@ -95,7 +95,7 @@ public class Classroom{
   
   public String getParticipantsEmail(){
   
-    String str= "";
+    String str += "";
            
         
         for(int i=0; i<participants.length; i++){
