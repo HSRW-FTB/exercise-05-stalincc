@@ -3,7 +3,7 @@ import java.util.Date;
 public class Professor extends User{
     private Faculty faculty = Faculty.TUB;
     private Campus campus = Campus.KLE;
-    private int phone =0; 
+    private int phone = 0; 
 
     private Professor(){
 
@@ -53,10 +53,11 @@ public class Professor extends User{
 
         if (this.campus == Campus.KLE){
             return ("+49 2821 806 73 " + String.valueOf(this.phone));
-            }
+        }
             
          else{
             return ("+49 2842 908 " + String.valueOf(this.phone));
     
+        }
     }
 }
