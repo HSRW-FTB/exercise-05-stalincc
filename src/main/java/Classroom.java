@@ -85,7 +85,7 @@ public class Classroom{
     
     List<Student> tempList = new ArrayList<Student>(Arrays.asList(participants)); 
   
-    tempList.add(student); 
+    tempList.add(studentarg); 
   
        participants = tempList.toArray(participants); 
   
