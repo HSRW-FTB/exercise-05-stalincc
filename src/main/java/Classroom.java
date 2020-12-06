@@ -83,11 +83,11 @@ public class Classroom{
   
   public void addStudent(Student studentarg){
     
-    List<Student> tempList = new ArrayList<Student>(Arrays.asList(participants)); 
+    List<Student> tempList = new ArrayList<Student>(Arrays.asList(this.participants)); 
   
     tempList.add(studentarg); 
   
-       participants = tempList.toArray(participants); 
+    this.participants = tempList.toArray(this.participants); 
   
     
     
@@ -105,7 +105,7 @@ public class Classroom{
 
             else if (i == (participants.length)){
 
-            str += "";
+            return str;
 
         }
                                          
@@ -116,7 +116,7 @@ public class Classroom{
           }
                
         }
-        return str;
+        
     
   }
   
