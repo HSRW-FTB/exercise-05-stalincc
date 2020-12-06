@@ -95,7 +95,7 @@ public class Classroom{
         for(Student p: participants){
             str = str + (p.getFQUN() + ", ");
         }
-        return newstr.substring(0,newstr.length()-2);
+        return str.substring(0,str.length()-2);
     }
         
     
