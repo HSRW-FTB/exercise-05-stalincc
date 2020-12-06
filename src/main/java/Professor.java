@@ -43,6 +43,8 @@ public class Professor extends User{
                                     }
                     return arr2[j];
 
+        }
+    
     }
     public void setPhone(int phonearg){
         this.phone= phonearg;
