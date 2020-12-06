@@ -1,7 +1,7 @@
 public class Rectangle extends GeometricObject{
     
-   double height=1;
-   double width=1;
+   double height;
+   double width;
   
    Rectangle(){
    
@@ -39,9 +39,13 @@ public class Rectangle extends GeometricObject{
     public void setFilled(int n) {
         
         if (n > 0){
-            super.setFilled(true);}
+            super.setFilled(true);
+        }
+        
         else{
-            super.setFilled(false);}
+            super.setFilled(false);
+        }
+        
     }
 
 
