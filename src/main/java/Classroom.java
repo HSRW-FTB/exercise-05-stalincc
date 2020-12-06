@@ -37,7 +37,7 @@ public class Classroom{
     
   }
   
-  public Course getCourse(){
+  public StudyCourse getCourse(){
   
     return this.course;
     
