@@ -27,7 +27,7 @@ public class Student extends User {
     
    
     
-    public Course getStudyCourse(){
+    public StudyCourse getStudyCourse(){
     
         return this.studycourse;
     
