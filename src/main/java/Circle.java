@@ -2,21 +2,27 @@ public class Circle extends GeometricObject {
 
 	double radius;
   
-    public Circle(){
+    	Circle(){
 	
-    }
+    	}
 	
-    public double getArea(){
+	Circle(double radius){
+		 
+        this.radius = radius; 
+    	
+	}
+	
+	public double getArea(){
 		
-  	return(Math.PI * (radius*radius));
-		
-    }
+  		return(Math.PI * Math.pow(radius,2));
+  	}
 	
-    public double getPerimeter(){
-    
-	  return(Math.PI*2*radius);
-	  
-  }
+	
+  	public double getPerimeter(){
+		
+   		 return(Math.PI*2.0*radius);
+		
+  	}
 	
   public double getRadius() {
 	  
