@@ -39,13 +39,13 @@ public class Professor extends User{
 
                 if( arr1[i] == this.faculty.name() ){
                       j = i;                        
-                                                    }
-                                    }
+                }
+            }
+                                    
                     return arr2[j];
 
-        }
-    
     }
+    
     public void setPhone(int phonearg){
         this.phone= phonearg;
     }
