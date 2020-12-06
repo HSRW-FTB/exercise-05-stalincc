@@ -52,7 +52,6 @@ public class BucketOfObjects{
             newstr += geo.getClass().getSimpleName()+", "; 
         }
         return newstr = newstr.substring(0,newstr.length()-2);
-    }  
   
    }
   
