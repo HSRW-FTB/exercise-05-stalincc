@@ -95,7 +95,7 @@ public class Classroom{
   
   public String getParticipantsEmail(){
   
-    String str += "";
+    String str = "";
            
         
         for(int i=0; i<participants.length; i++){
@@ -105,7 +105,7 @@ public class Classroom{
 
             else if (i == (participants.length)){
 
-            return str;
+              str += "";
 
         }
                                          
@@ -116,6 +116,8 @@ public class Classroom{
           }
                
         }
+    
+        return str;
         
     
   }
