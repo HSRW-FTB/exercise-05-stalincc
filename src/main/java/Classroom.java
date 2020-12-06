@@ -84,7 +84,7 @@ public class Classroom{
   
   public void addStudent(Student studentarg){
     
-    participants.add(newStudent); 
+    participants.add(studentarg); 
     
     
   }
