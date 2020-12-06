@@ -1,3 +1,4 @@
+import java.util.GregorianCalendar;
 import java.util.Date;
 import java.util.*;
 import java.util.List;
@@ -98,11 +99,10 @@ public class Classroom{
     }
         
     
-  }
   
   public int getTotalParticipants(){
   
-    return participants.size(); 
+    return this.participants.size(); 
 
     
   }
