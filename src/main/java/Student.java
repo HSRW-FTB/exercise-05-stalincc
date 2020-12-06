@@ -3,7 +3,7 @@ import java.util.Date;
 public class Student extends User {
     
     private static int idGen = 10000;
-    private Course studycourse;
+    private StudyCourse studycourse;
         
     private Student(){
         
