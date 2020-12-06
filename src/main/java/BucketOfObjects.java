@@ -1,42 +1,45 @@
+import java.util.*;
+import java.util.ArrayList;
+
 public class BucketOfObjects{
 
-  private GeometricObject [] items ;
+  private ArrayList<GeometricObject> items = new ArrayList<GeometricObject>(); 
   
   public BucketOfObjects(){
-  
   
   }
   
   public void addObject(GeometricObject obj){
   
-    for(int i=0; i< this.items.length; i++){
-      this.items[i]= obj;
+    items.add(obj);
+    
     }    
     
   }
   public double getTotalArea(){
-    double ar=0;
     
-    for(int i=0; i< this.items.length; i++){
-      ar += items[i].getArea();
- 
+    double ar = 0;
     
+    for (GeometricObject geo : items){
+        ar += geo.getArea();
     
     }
-    return ar;
+    
+        return ar;
+    
   
   }
+
+
   public double getTotalPerimeter(){
   
-      double p=0;
+      double p = 0;
+        for (GeometricObject geo : items){
+            p += geo.getPerimeter();
+        }
     
-    for(int i=0; i< this.items.length; i++){
-      p+= items[i].getPerimeter();
- 
+        return p;
     
-    
-    }
-    return p;
   }
   
   
@@ -44,25 +47,14 @@ public class BucketOfObjects{
   
   public String toString(){
   
-    String str = "";
+    String newstr = ""; 
+        for (GeometricObject geo: items ){
+            newstr += geo.getClass().getSimpleName()+", "; 
+        }
+        return newstr = newstr.substring(0,newstr.length()-2);
+    }  
   
-    for(int i = 0; i<this.items.length; i++){
-  
-      if(i == (this.items.length-1)){
-      
-        str += String.valueOf(this.items[i]);
-      
-                                     }
-      
-      else{
-      
-        str += (String.valueOf(this.items[i]) + ", ");
-      
-           }
-    }
-    return str;   
-  
-           }
+   }
   
   
 
